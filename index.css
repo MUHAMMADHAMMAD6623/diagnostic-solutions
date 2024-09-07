@@ -132,6 +132,9 @@ header .right .menu-clicked .bars:nth-child(3){
     flex-direction: column;
     gap: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 1px solid rgb(202, 202, 202);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .product:hover {
     transform: translateY(-10px);
@@ -177,6 +180,9 @@ footer .footer-text{
     }
     .products{
         padding: 40px 70px;
+    }
+    .products .product-container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (max-width: 700px) {
@@ -225,5 +231,8 @@ footer .footer-text{
     }
     .products{
         padding: 30px 40px;
+    }
+    .products .product-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }

@@ -3,6 +3,9 @@ const logo = document.querySelector('#logo');
 const left = document.querySelector('.left');
 const menuico = document.querySelector('.menu');
 const menubar = document.querySelector('.menubar');
+const menuopen = document.querySelector('.menu-open')
+
+
 
 menuico.addEventListener('click', () => {
   menuico.classList.toggle('menu-clicked');
@@ -37,10 +40,3 @@ function handleScroll() {
         left.append(logo);   // Move the logo back to the left section
     }
 }
-
-// Prevent jumping to top when clicking menu items
-document.querySelectorAll('a[href="#"]').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-    });
-});
