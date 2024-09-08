@@ -239,3 +239,13 @@ footer .footer-text{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+.products .product-container .product{
+    opacity: 0.1;
+    transform: scale(0.7);
+    transition: opacity 0.8s ease, transform 0.5s ease;
+}
+
+.products .product-container .product.in-view {
+opacity: 1; /* Fully visible */
+transform: scale(1); /* Full scale */
+}
